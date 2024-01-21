@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+   padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ECF3F9;
+}
+nav{
+    width: 100vw;
+    height: 80px;
+    
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+h1 {
+    width: 100vw;
+    font-family: 'Russo One', sans-serif;
+    font-size: 4rem;
+    padding: 20px 100px;
+    color: #737373;
+    /* text-shadow: 4px 5px 2px rgba(0,0,0,0.6); */
+}
+.qnsCon{
+    width: 80%;
+    
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    color: #666666;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 80px;
+    font-weight: 700;
+}
+.qns{
+    font-size: 2.5rem;
+    text-align: center;
+}
+.options{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.optn{
+    width: 350px;
+    text-align: center;
+    padding: 20px;
+    margin: 15px 25px;
+    background-color: #ECF3F9;
+    font-size: 2rem;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: .5s;
+    &:hover:not([disabled]){
+        background-color: #e6e6e6;
+        cursor: pointer;
+    }
+}
+.disabled {
+    pointer-events: none;
+  }
+button{
+    padding: 10px 45px;
+    font-size: 3rem;
+    margin-top: 30px;
+    background-color: #e6f2ff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border:none;
+    transition: 2s;
+    border-radius: 20px;
+    border: 2px solid #99caff;
+    color: #404040;
+    &:hover{
+        background-color: #99caff;
+        cursor: pointer;
+    }
+}
+.correct{
+    background-color: #9aeabc;
+}
+.incorrect{
+    background-color: #ff9393;
+}
+.qno{
+    text-align: left;
+    padding-top: 60px;
+    font-size: 20px;
+}
+@media screen and (max-width: 780px) {
+   html{
+    font-size: 60%;
+   }
+  }
+  @media screen and (max-width: 500px) {
+    html{
+     font-size: 40%;
+    }
+   }
+   @media screen and (max-width: 380px) {
+    html{
+     font-size: 35%;
+    }
+    .optn{
+        width: 300px;
+    }
+
+   }
